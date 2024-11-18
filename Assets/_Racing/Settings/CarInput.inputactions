@@ -1,0 +1,104 @@
+{
+    "name": "CarInput",
+    "maps": [
+        {
+            "name": "Movement",
+            "id": "5f77f458-97ae-4795-b3f5-05dfcf502dca",
+            "actions": [
+                {
+                    "name": "Horizontal/Vertical",
+                    "type": "Value",
+                    "id": "125c40f0-dde0-46f4-b2ab-8abda13f8de7",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Braking",
+                    "type": "Value",
+                    "id": "f7ba197b-0a83-482d-9bfd-3e84c46a368b",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "2D Vector",
+                    "id": "c05b94c4-d836-492a-be8d-262461f8f0db",
+                    "path": "2DVector",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Horizontal/Vertical",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "up",
+                    "id": "584870ba-041a-4471-bed4-563c16df917c",
+                    "path": "<Keyboard>/w",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "CarInput",
+                    "action": "Horizontal/Vertical",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "down",
+                    "id": "d5c835f6-9723-44fb-bdec-900472c73b7d",
+                    "path": "<Keyboard>/s",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "CarInput",
+                    "action": "Horizontal/Vertical",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "left",
+                    "id": "0c76f45e-c710-478c-aee2-09bf4257e13e",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "CarInput",
+                    "action": "Horizontal/Vertical",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "ced33f28-f653-489b-a1ca-ed9d5ead6b9c",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "CarInput",
+                    "action": "Horizontal/Vertical",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "677c54a1-477a-4522-a4b6-9367c7403ba8",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Braking",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "CarInput",
+            "bindingGroup": "CarInput",
+            "devices": []
+        }
+    ]
+}
